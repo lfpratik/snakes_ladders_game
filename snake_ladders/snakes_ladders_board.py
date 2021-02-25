@@ -108,7 +108,7 @@ class SnakesLaddersBoard:
         player_name = None
         for i in range(0, no_players):
             if self._PRO_MODE:
-                player_name = input('Enter player name: ')
+                player_name = input(f'Enter {i+1} player name: ')
             player_instance = Player(player_num=(i + 1),
                                      player_name=player_name)
             self.player_lst.append(player_instance)
@@ -167,7 +167,7 @@ class SnakesLaddersBoard:
             for player in self.player_lst:
                 crooked = (player.get_pos() != 1)
                 time.sleep(SLEEP_BETWEEN_ACTIONS)
-                print(f'{player.get_name()} : '
+                print(f'\n{player.get_name()} : '
                       f'{random.choice(self._PLAYER_TURN_TEXT)} '
                       f'Hit the enter to roll dice: ')
                 print("Rolling dice...")
@@ -191,7 +191,7 @@ class SnakesLaddersBoard:
             print('-' * 79)
             for player in self.player_lst:
                 time.sleep(SLEEP_BETWEEN_ACTIONS)
-                input(f'{player.get_name()} : '
+                input(f'\n{player.get_name()} : '
                       f'{random.choice(self._PLAYER_TURN_TEXT)} '
                       f'Hit the enter to roll dice: ')
                 print("Rolling dice...")
