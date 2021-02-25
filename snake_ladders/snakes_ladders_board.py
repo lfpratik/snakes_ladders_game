@@ -101,8 +101,8 @@ class SnakesLaddersBoard:
     def get_position(position, _from):
         return _from.get(position)
 
-    def set_profile(self, pro_mode=False):
-        self._PRO_MODE = pro_mode
+    def set_profile(self, profile_mode=False):
+        self._PRO_MODE = profile_mode
 
     def _get_players(self, no_players):
         player_name = None

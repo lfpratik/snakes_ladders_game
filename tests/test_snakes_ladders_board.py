@@ -62,7 +62,7 @@ class TestSnakesLaddersBoard(unittest.TestCase):
 
     def test_set_profile(self):
         self.assertFalse(self.game._PRO_MODE)
-        self.game.set_profile(pro_mode=True)
+        self.game.set_profile(profile_mode=True)
         self.assertTrue(self.game._PRO_MODE)
 
     def test_get_player(self):
