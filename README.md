@@ -29,7 +29,7 @@
         2. python -m unittest -v
 
 
-#### How to run indivisual test case
+#### How to run individual test case
 
     commands:
         1. python -m unittest tests/test_dice.py
